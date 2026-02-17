@@ -10,22 +10,18 @@
 	<style>
 <body>
     <!-- add table here -->
-               background-color: #f2f2f2;
+		 background-color: #f2f2f2;
             font-family: Arial, sans-serif;
             display: flex;
             justify-content: center;
             padding: 60px;
         }
 
-        .table-container {
-            width: 70%;
-        }
-
         table {
-            width: 100%;
+            width: 70%;
             border-collapse: collapse;
             border-radius: 10px;
-            overflow: hidden; /* Makes rounded corners visible */
+            overflow: hidden;
         }
 
         thead {
@@ -40,6 +36,17 @@
             letter-spacing: 1px;
         }
 
+        td {
+            padding: 14px;
+            font-size: 14px;
+            color: #333;
+        }
+
+        th:not(:first-child),
+        td:not(:first-child) {
+            text-align: center;
+        }
+
         tbody tr:nth-child(odd) {
             background-color: #e6e6e6;
         }
@@ -47,18 +54,6 @@
         tbody tr:nth-child(even) {
             background-color: #d3d3d3;
         }
-
-        td {
-            padding: 14px;
-            font-size: 14px;
-            color: #333;
-        }
-
-        td:not(:first-child),
-        th:not(:first-child) {
-            text-align: center;
-        }
-
     </style>
         
 </body>
